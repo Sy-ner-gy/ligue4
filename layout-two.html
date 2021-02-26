@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, target-densityDpi=device-dpi">
+    <meta name="author" content="Synergy">
+    <meta name="description" content="Jogo de Tabuleiro, muito divertido">
+    <meta name="keywords" content="jogo, game, tabuleiro, ligue4, 2 players, 1 player">
+    <meta name="robots" content="index">
+    <meta name="theme-color" content="#ff0000">
+    <meta name="HandheldFriendly" content="True"> 
+    <meta name="MobileOptimized" content="0">
+    <link rel="stylesheet" type="text/css" href="src/css/layout-color-two.css">
+    <script src="src/js/prototypes.js"></script>
+    <title>Ligue-4</title>
+</head>
+
+<body>
+
+    <main class="area-game-box">
+        <header class="header-box">
+          
+            <div id="logo-game-box">
+                <picture>
+                  <source srcset="src/img/layout600.png" media="(max-width:600px)">
+                  <source srcset="src/img/layout900.png" media="(min-width:900px)">
+                  <source srcset="src/img/layout1200.png" media="(min-width:1200px)">
+                  <img src="src/img/layout.png">
+                </picture>
+            </div>
+            <div id="logo-equip-box">
+                <picture>
+                  <source srcset="src/img/layout600.png" media="(max-width:600px)">
+                  <source srcset="src/img/layout900.png" media="(min-width:900px)">
+                  <source srcset="src/img/layout1200.png" media="(min-width:1200px)">
+                  <img src="src/img/layout.png">
+                </picture>
+            </div>
+            <img src="https://avatars.githubusercontent.com/u/77839817?s=200&v=4" class="img-logo-equip-box">
+            <div id="barra-menu-box">
+                <nav>
+                   <ul id="ulN">
+                    <li class="lN"> 
+                        <div id="menu-perfil-box">
+                            
+                        </div>
+                    </li>
+                    <li class="lN">
+                        <div id="menu-salvar-box">
+                            
+                        </div>
+                    </li>
+                    <li class="lN">
+                        <div id="menu-menu-box">
+                            <input type="button" value="SHOW" id="btn-teste">
+                        </div>
+                    </li>
+                   </ul>
+                    
+                   
+                </nav>
+            </div>
+           <div class="dados-pvp-box">
+               <input type="image" src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-window-close-icon.png" alt="Close" id="close">
+               <section id="box-left">
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+               </section>
+               <section id="box-right">
+                    <div>
+
+                    </div>
+                    <div>
+                        
+                    </div>
+               </section>
+               <footer>
+                    <div>
+
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+                        
+                    </div>
+               </footer>
+           </div>
+        </header>
+
+        <div id="game-image-box" hidden>
+            <picture>
+              <source srcset="src/img/layout600.png" media="(max-width:600px)">
+              <source srcset="src/img/layout900.png" media="(min-width:900px)">
+              <source srcset="src/img/layout1200.png" media="(min-width:1200px)">
+              <img src="src/img/layout.png">
+            </picture>
+        </div>
+
+        <section class="area-player-box" id="area-player1-box">
+            <div id="image-player1-box">
+               <picture>
+                 <source srcset="src/img/layout600.png" media="(max-width:600px)">
+                 <source srcset="src/img/layout900.png" media="(min-width:900px)">
+                 <source srcset="src/img/layout1200.png" media="(min-width:1200px)">
+                 <img src="src/img/layout.png">
+               </picture>
+            </div>
+            <ul class="field-game-box">
+                <li>
+                    <div class="campo-game-box" id="player1-pts-box">
+                    </div>
+                    <div id="field-player1-pts-box" class="fields">
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="campo-game-box" id="player1-vit-box">
+                    </div>
+                    <div id="field-player1-vit-box" class="fields">
+                    </div>
+                    
+                </li>
+              
+                <li>
+                    <div class="campo-game-box" id="player1-der-box">
+                    </div>
+                    <div id="field-player1-der-box" class="fields">
+                    </div>
+                  
+                </li>
+               
+            </ul>
+            <div class="time-icon-green-box conf">
+                <picture>
+                  <source srcset="src/img/layout600.png" media="(max-width:600px)">
+                  <source srcset="src/img/layout900.png" media="(min-width:900px)">
+                  <source srcset="src/img/layout1200.png" media="(min-width:1200px)">
+                  <img src="src/img/layout.png">
+                </picture>
+            </div>
+        </section>
+    
+        <section class="area-player-box" id="area-player2-box">
+            <div id="image-player2-box">
+                <picture>
+                  <source srcset="src/img/layout600.png" media="(max-width:600px)">
+                  <source srcset="src/img/layout900.png" media="(min-width:900px)">
+                  <source srcset="src/img/layout1200.png" media="(min-width:1200px)">
+                  <img src="src/img/layout.png">
+                </picture>
+            </div>
+            <ul class="field-game-box">
+                <li>
+                    <div id="field-player2-pts-box" class="fields">
+                    </div>
+                    <div class="campo-game-box-two" id="player2-pts-box">
+                    </div>
+                   
+                </li>
+               
+                <li>
+                    <div id="field-player2-vit-box" class="fields">
+                    </div>
+                    <div class="campo-game-box-two" id="player2-vit-box">
+                    </div>
+                </li>
+                <li>
+                    <div id="field-player2-der-box" class="fields">
+                    </div>
+                    <div class="campo-game-box-two" id="player2-der-box">
+                    </div>
+                    
+                </li>
+               
+            </ul>
+            <div class="time-icon-red-box conf" >
+                <picture>
+                  <source srcset="src/img/layout600.png" media="(max-width:600px)">
+                  <source srcset="src/img/layout900.png" media="(min-width:900px)">
+                  <source srcset="src/img/layout1200.png" media="(min-width:1200px)">
+                  <img src="src/img/layout.png">
+                </picture>
+            </div>
+        </section>
+        <section id="game-table-box">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <footer class="rodape-box">
+            <picture class="rodape-logo">
+                  <source srcset="src/img/layout600.png" media="(max-width:600px)">
+                  <source srcset="src/img/layout900.png" media="(min-width:900px)">
+                  <source srcset="src/img/layout1200.png" media="(min-width:1200px)">
+                  <img src="src/img/layout.png">
+                </picture>
+        </footer>
+    </main>
+
+   <script src="src/js/index.js"></script> 
+</body>
+</html>

@@ -1,0 +1,515 @@
+/*Geral*/
+* {
+      position:absolute;
+      -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin:0px;
+          position:absolute;
+          
+}
+
+body {
+      overflow-x:hidden;
+}
+
+
+
+img, picture {
+      max-width:100%;
+      max-height:100%;
+      width:100%;
+      height:100%;
+} 
+
+
+
+/*Mobile e Tablet-Retrato*/
+@media only screen and (max-width:1199px) and (orientation:portrait) {
+  
+/*Header*/
+.header-box {
+      width:100vw;
+      left:0vw;
+      height:14vh;
+      top:0vh;
+        
+}
+
+
+#logo-game-box {
+      width:40vw;
+      left:30vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+#logo-equip-box {
+      width:40vw;
+      left:59vw;
+      height:8vh;
+      top:1vh;
+      display:none;
+}
+
+
+#barra-menu-box {
+      width:100vw;
+      left:0vw;
+      height:3vh;
+      top:10vh;
+}
+
+
+#menu-perfil-box {
+      width:15vw;
+      left:2vw;
+      height:3vh;
+      top:0vh;
+}
+
+
+#menu-menu-box {
+      width:15vw;
+      left:42.5vw;
+      height:3vh;
+      top:0vh;
+}
+
+
+#menu-salvar-box {
+      width:15vw;
+      left:83vw;
+      height:3vh;
+      top:0vh;
+}
+
+.img-menu-box {
+      width:10vw;
+      height:8vh;
+}
+
+
+#img-menu-equip {
+      left:3vw;
+      top:1vh;
+}
+
+
+#img-menu-history {
+      left:87vw;
+      top:1vh;
+      
+}
+
+
+
+/*Área do Game*/
+.area-game-box {
+      width:100vw;
+      left:0vw;
+      height:63vh;
+      top:37vh;
+        
+}
+
+
+#game-table-box, #game-image-box{
+      width:100vw;
+      left:0vw;
+      height:51vh;
+      top:0vh;
+      
+}
+
+
+
+/*Área do Player*/
+#area-player1-box {
+      width:50vw;
+      left:0vw;
+      height:23vh;
+      top:14vh;
+        
+}
+
+
+#image-player1-box {
+      width:20vw;
+      left:1vw;
+      height:15vh;
+      top:1vh;
+}
+
+
+.field-game-box {
+      width:15vw;
+      height:5vh;
+}
+
+
+#field-player1-pts-box {
+      left:22vw;
+      top:1vh;
+}
+
+
+#field-player1-vit-box {
+      left:22vw;
+      top:7vh;
+}
+
+
+#field-player1-der-box {
+      left:22vw;
+      top:13vh;
+}
+
+
+.campo-game-box {
+      width:6vw;
+      height:5vh;
+}
+
+#player1-pts-box {
+      left:38vw;
+      top:1vh;
+}
+
+
+#player1-vit-box {
+      left:38vw;
+      top:7vh;
+}
+
+
+#player1-der-box {
+      left:38vw;
+      top:13vh;
+}
+
+
+.time-icon-green-box {
+      width:8vw;
+      left:6.5vw;
+      height:8vw;
+      top:17vh;
+}
+
+
+
+#area-player2-box {
+      width:50vw;
+      left:50vw;
+      height:23vh;
+      top:14vh;
+}
+
+
+#image-player2-box {
+      width:20vw;
+      left:28vw;
+      height:15vh;
+      top:1vh;
+}
+
+
+#field-player2-pts-box {
+      left:12vw;
+      top:1vh;
+}
+
+
+#field-player2-vit-box {
+      left:12vw;
+      top:7vh;
+}
+
+
+#field-player2-der-box {
+      left:12vw;
+      top:13vh;
+}
+
+
+#player2-pts-box {
+      left:5vw;
+      top:1vh;
+}
+
+
+#player2-vit-box {
+      left:5vw;
+      top:7vh;
+}
+
+
+#player2-der-box {
+      left:5vw;
+      top:13vh;
+}
+
+
+.time-icon-red-box {
+      width:8vw;
+      left:33.5vw;
+      height:8vw;
+      top:17vh;
+}
+
+
+/*Rodapé*/
+.rodape-box {
+      width:100vw;
+      left:0vw;
+      height:14vh;
+      top:100vh;
+        
+}
+
+
+.rodape-logo {
+    width:40vw;
+    left:30vw;
+    height:12vh;
+    top:1vh;
+}
+}
+
+
+
+/*Mobile e Tablet-Paisagem; Desktop*/
+@media only screen and (orientation:landscape), (min-width:1200px) {
+  
+/*Header*/
+.header-box {
+      width:100vw;
+      left:0vw;
+      height:20vh;
+      top:0vh;
+        
+}
+
+
+#logo-game-box {
+      width:23vw;
+      left:1vw;
+      height:18vh;
+      top:1vh;
+}
+
+
+#logo-equip-box {
+      width:23vw;
+      left:76vw;
+      height:18vh;
+      top:1vh;
+}
+
+
+#barra-menu-box {
+      width:50vw;
+      left:25vw;
+      height:14vh;
+      top:3vh;
+}
+
+
+.img-menu-box {
+      display:none;
+}
+
+#menu-perfil-box {
+      width:12vw;
+      left:1vw;
+      height:12vh;
+      top:1vh;
+}
+
+
+#menu-menu-box {
+      width:12vw;
+      left:18.5vw;
+      height:12vh;
+      top:1vh;
+}
+
+
+#menu-salvar-box {
+      width:12vw;
+      left:37vw;
+      height:12vh;
+      top:1vh;
+}
+
+
+
+/*Área do Game*/
+.area-game-box {
+      width:56vw;
+      left:22vw;
+      height:80vh;
+      top:20vh;
+        
+}
+
+
+#game-table-box, #game-image-box{
+      width:56vw;
+      left:0vw;
+      height:80vh;
+      top:0vh;
+      
+}
+
+
+
+/*Área do Player*/
+#area-player1-box {
+      width:22vw;
+      left:0vw;
+      height:80vh;
+      top:20vh;
+        
+}
+
+
+#image-player1-box {
+      width:20vw;
+      left:1vw;
+      height:30vh;
+      top:1vh;
+}
+
+
+.field-game-box {
+      width:15vw;
+      height:5vh;
+}
+
+
+#field-player1-pts-box {
+      left:1vw;
+      top:34vh;
+}
+
+
+#field-player1-vit-box {
+      left:1vw;
+      top:40vh;
+}
+
+
+#field-player1-der-box {
+      left:1vw;
+      top:46vh;
+}
+
+
+.campo-game-box {
+      width:4vw;
+      height:5vh;
+}
+
+#player1-pts-box {
+      left:17vw;
+      top:34vh;
+}
+
+
+#player1-vit-box {
+      left:17vw;
+      top:40vh;
+}
+
+
+#player1-der-box {
+      left:17vw;
+      top:46vh;
+}
+
+
+.time-icon-green-box {
+      width:8vw;
+      left:7vw;
+      height:8vw;
+      top:58vh;
+}
+
+
+
+#area-player2-box {
+      width:22vw;
+      left:78vw;
+      height:80vh;
+      top:20vh;
+}
+
+
+#image-player2-box {
+      width:20vw;
+      left:1vw;
+      height:30vh;
+      top:1vh;
+}
+
+
+#field-player2-pts-box {
+      left:6vw;
+      top:34vh;
+}
+
+
+#field-player2-vit-box {
+      left:6vw;
+      top:40vh;
+}
+
+
+#field-player2-der-box {
+      left:6vw;
+      top:46vh;
+}
+
+
+#player2-pts-box {
+      left:1vw;
+      top:34vh;
+}
+
+
+#player2-vit-box {
+      left:1vw;
+      top:40vh;
+}
+
+
+#player2-der-box {
+      left:1vw;
+      top:46vh;
+}
+
+
+.time-icon-red-box {
+      width:8vw;
+      left:7vw;
+      height:8vw;
+      top:58vh;
+}
+
+
+/*Rodapé*/
+.rodape-box {
+      width:100vw;
+      left:0vw;
+      height:10vh;
+      top:100vh;
+        
+}
+
+
+.rodape-logo {
+      display:none;
+}
+}

@@ -1,0 +1,153 @@
+/* Geral */
+.dados-pvp-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 97%;
+    background-color: rgb(122, 106, 47);
+    transform: translate(5%,3%);
+    z-index: 2;
+    animation: openn 1s;
+}
+.dados-pvp-box.close{
+    transform: translate(150%,5%);
+    visibility: hidden;
+    animation: close 1s;
+}
+@keyframes openn {from{transform: translate(-150%,3%);visibility: hidden;}to{transform: translate(5%,3%);visibility: visible;}}
+@keyframes close {from{transform: translate(5%,3%);visibility: visible;}to{transform: translate(-150%,3%);visibility: hidden;}}
+
+.dados-pvp-box #close{
+    position: absolute;
+    top: calc(-50px/4);
+    right: calc(-50px/4);
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-radius: 50px;
+    border:2px solid white;
+    cursor: pointer;
+}
+#close:active{background: red;border:2px solid black}
+.dados-pvp-box section#box-left{
+    float: left;
+    width: 50%;
+    height: 80%;
+    text-align: center;
+    background: rgb(105, 4, 4);
+}
+.dados-pvp-box section#box-right{
+    float: right;
+    width: 50%;
+    height: 80%;
+    text-align: center;
+    background: rgb(3, 75, 18);
+}
+#box-left div:nth-child(1){
+    width: 90%;
+    height: 50%;
+    margin: 10px auto;
+    background: rgb(12, 12, 12);
+}
+#box-left div:nth-child(2){
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    background: rgb(87, 134, 87);
+}
+#box-right div:nth-child(1){
+    width: 90%;
+    height: 50%;
+    margin: 10px auto;
+    background: rgb(12, 12, 12);
+}
+#box-right div:nth-child(2){
+    width: 50%;
+    height: 5%;
+    margin: auto;
+    background: rgb(219, 189, 189);
+}
+.dados-pvp-box footer{
+    clear: both;
+    padding: 0px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    background: rgb(25, 3, 75);
+}
+.dados-pvp-box footer div:nth-child(1){
+    float: left;
+    width: calc(100%/3);
+    height: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: rgb(3, 75, 19);
+}
+.dados-pvp-box footer div:nth-child(2){
+    float: right;
+    width: calc(100%/3);
+    height: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: rgb(151, 153, 4);
+}
+.dados-pvp-box footer div:nth-child(3){
+    clear: both;
+    width: calc(100%/3);
+    margin: auto;
+    height: 20%;
+    text-align: center;
+    background: rgb(153, 4, 29);
+}
+
+
+@media only screen and (max-width:680px){
+    .dados-pvp-box{
+        width: 85%;
+        height: 96%;
+    }
+    .dados-pvp-box footer div:nth-child(1){
+        margin-top: 20px;
+        margin-bottom: 5px;
+
+
+    }
+    .dados-pvp-box footer div:nth-child(2){
+        margin-top: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+
+    }
+    .dados-pvp-box footer div:nth-child(3){
+        clear: both;
+        height: 20%;
+
+    }
+}
+/*Mobile e Tablet-Retrato*/
+@media only screen and (max-width:380px){
+    .dados-pvp-box{
+        width: 90%;
+        height: 50%;
+    }
+    .dados-pvp-box footer div:nth-child(1){
+        margin-top: 20px;
+        margin-bottom: 5px;
+
+
+    }
+    .dados-pvp-box footer div:nth-child(2){
+        margin-top: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+
+    }
+    .dados-pvp-box footer div:nth-child(3){
+        clear: both;
+        height: 20%;
+
+    }
+}

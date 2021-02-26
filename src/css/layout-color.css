@@ -1,0 +1,1439 @@
+/*Geral*/
+
+* {
+      position:absolute;
+      margin:0px;
+      -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body {
+      background-color:black;
+      overflow-x:hidden;
+}
+
+
+img, picture {
+      max-width:100%;
+      max-height:100%;
+      width:100%;
+      height:100%;
+} 
+
+
+
+/*Mobile e Tablet-Retrato*/
+
+@media only screen and (max-width:1199px) and (orientation:portrait) {
+  
+/*Header*/
+
+.header-box {
+      background-color:#ffffff;
+      width:100vw;
+      left:0vw;
+      height:14vh;
+      top:0vh;
+}
+
+
+.logo-game-box {
+      background-color:#ff0000;
+      width:40vw;
+      left:30vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+.logo-equip-box {
+      background-color:#00ff00;
+      width:40vw;
+      left:59vw;
+      height:8vh;
+      top:1vh;
+      display:none;
+}
+
+
+.barra-menu-box {
+      background-color:#0000ff;
+      width:100vw;
+      left:0vw;
+      height:3vh;
+      top:10vh;
+}
+
+
+.menu-perfil-box {
+      background-color:#00ff00;
+      width:15vw;
+      left:2vw;
+      height:3vh;
+      top:0vh;
+}
+
+
+.menu-menu-box {
+      background-color:#ff0000;
+      width:15vw;
+      left:42.5vw;
+      height:3vh;
+      top:0vh;
+}
+
+
+.menu-salvar-box {
+      background-color:#ffff00;
+      width:15vw;
+      left:83vw;
+      height:3vh;
+      top:0vh;
+}
+
+
+.img-menu-equip-box {
+      background-color:#0000ff;
+      width:10vw;
+      left:3vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+.img-menu-history-box {
+      background-color:#0000ff;
+      width:10vw;
+      left:87vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+
+/*Área do Game*/
+
+.area-game-box {
+      background-color:#dddddd;
+      width:100vw;
+      left:0vw;
+      height:63vh;
+      top:37vh;
+}
+
+
+.game-table-box, .game-image-box{
+      width:100vw;
+      left:0vw;
+      height:51vh;
+      top:0vh;
+}
+
+
+
+/*Área do Player*/
+
+.area-player1-box {
+      background-color:#bbbbbb;
+      width:50vw;
+      left:0vw;
+      height:23vh;
+      top:14vh;
+}
+
+
+.image-player1-box {
+      background-color:#00ff00;
+      width:20vw;
+      left:1vw;
+      height:15vh;
+      top:1vh;
+}
+
+
+.field-player1-pts-box {
+      background-color:#ff00ff;
+      width:15vw;
+      left:22vw;
+      height:5vh;
+      top:1vh;
+}
+
+
+.field-player1-vit-box {
+      background-color:#ffff00;
+      width:15vw;
+      left:22vw;
+      height:5vh;
+      top:7vh;
+}
+
+
+.field-player1-der-box {
+      background-color:#00ffff;
+      width:15vw;
+      left:22vw;
+      height:5vh;
+      top:13vh;
+}
+
+
+.campo-player1-pts-box {
+      background-color:#ff00ff;
+      width:6vw;
+      left:38vw;
+      height:5vh;
+      top:1vh;
+}
+
+
+.campo-player1-vit-box {
+      background-color:#ffff47;
+      width:6vw;
+      left:38vw;
+      height:5vh;
+      top:7vh;
+}
+
+
+.campo-player1-der-box {
+      background-color:#56ffff;
+      width:6vw;
+      left:38vw;
+      height:5vh;
+      top:13vh;
+}
+
+
+.time-icon-green-box {
+      background-color:#00ff00;
+      width:8vw;
+      left:6.5vw;
+      height:8vw;
+      top:17vh;
+}
+
+
+.area-player2-box {
+      background-color:#999999;
+      width:50vw;
+      left:50vw;
+      height:23vh;
+      top:14vh;
+}
+
+
+.image-player2-box {
+      background-color:#00ff00;
+      width:20vw;
+      left:28vw;
+      height:15vh;
+      top:1vh;
+}
+
+
+.field-player2-pts-box {
+      background-color:#ff00ff;
+      width:15vw;
+      left:12vw;
+      height:5vh;
+      top:1vh;
+}
+
+
+.field-player2-vit-box {
+      background-color:#ffff00;
+      width:15vw;
+      left:12vw;
+      height:5vh;
+      top:7vh;
+}
+
+
+.field-player2-der-box {
+      background-color:#00ffff;
+      width:15vw;
+      left:12vw;
+      height:5vh;
+      top:13vh;
+}
+
+
+.campo-player2-pts-box {
+      background-color:#ff00ff;
+      width:6vw;
+      left:5vw;
+      height:5vh;
+      top:1vh;
+}
+
+
+.campo-player2-vit-box {
+      background-color:#ffff47;
+      width:6vw;
+      left:5vw;
+      height:5vh;
+      top:7vh;
+}
+
+
+.campo-player2-der-box {
+      background-color:#56ffff;
+      width:6vw;
+      left:5vw;
+      height:5vh;
+      top:13vh;
+}
+
+
+.time-icon-red-box {
+      background-color:#ff0000;
+      width:8vw;
+      left:33.5vw;
+      height:8vw;
+      top:17vh;
+}
+
+
+
+/*Rodapé*/
+
+.rodape-box {
+      background-color:#555555;
+      width:100vw;
+      left:0vw;
+      height:14vh;
+      top:100vh;
+}
+
+
+.rodape-logo {
+    background-color:#00ff00;
+    width:40vw;
+    left:30vw;
+    height:12vh;
+    top:1vh;
+}
+
+
+
+/*Elementos Ocultos*/
+
+/*Preâmbulo 1A:Partidas Salvas*/
+
+.loading-box {
+      background-color:#000000;
+      display:block;
+      width:98vw;
+      left:1vw;
+      height:98vh;
+      top:1vh;
+      display:none;
+}
+
+
+.loading-main-box {
+      background-color:#ff0000;
+      width:96vw;
+      left:1vw;
+      height:47vh;
+      top:1vh;
+      overflow-y:scroll;
+}
+
+
+.loading-fields-box {
+      background-color:#00ff00;
+      width:96vw;
+      left:1vw;
+      height:48vh;
+      top:49vh;
+}
+
+
+.loading-fields-player1-box {
+      background-color:#0000ff;
+      width:45.5vw;
+      left:1vw;
+      height:30vh;
+      top:7vh;
+}
+
+
+.loading-fields-player2-box {
+      background-color:#ff00ff;
+      width:45.5vw;
+      left:49.5vw;
+      height:30vh;
+      top:7vh;
+}
+
+
+.loading-field-numrodadas-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:30vw;
+      height:5vh;
+      top:1vh;
+}
+
+
+.loading-campo-numrodadas-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:58vw;
+      height:5vh;
+      top:1vh;
+}
+
+
+.loading-field-player1-name-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:5vh;
+      top:2vh;
+}
+
+
+.loading-campo-player1-name-box {
+      background-color:#ff0000;
+      width:14vw;
+      left:30vw;
+      height:5vh;
+      top:2vh;
+}
+
+
+.loading-field-player1-pts-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:5vh;
+      top:9vh;
+}
+
+
+.loading-campo-player1-pts-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:5vh;
+      top:9vh;
+}
+
+
+.loading-field-player1-vit-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:5vh;
+      top:16vh;
+}
+
+
+.loading-campo-player1-vit-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:5vh;
+      top:16vh;
+}
+
+
+.loading-field-player1-der-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:5vh;
+      top:23vh;
+}
+
+
+.loading-campo-player1-der-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:5vh;
+      top:23vh;
+}
+
+
+.loading-field-player2-name-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:18vw;
+      height:5vh;
+      top:2vh;
+}
+
+
+.loading-campo-player2-name-box {
+      background-color:#ff0000;
+      width:14vw;
+      left:1vw;
+      height:5vh;
+      top:2vh;
+}
+
+
+.loading-field-player2-pts-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:18vw;
+      height:5vh;
+      top:9vh;
+}
+
+
+.loading-campo-player2-pts-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:8vw;
+      height:5vh;
+      top:9vh;
+}
+
+
+.loading-field-player2-vit-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:18vw;
+      height:5vh;
+      top:16vh;
+}
+
+
+.loading-campo-player2-vit-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:8vw;
+      height:5vh;
+      top:16vh;
+}
+
+
+.loading-field-player2-der-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:18vw;
+      height:5vh;
+      top:23vh;
+}
+
+
+.loading-campo-player2-der-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:8vw;
+      height:5vh;
+      top:23vh;
+}
+
+
+.loading-button-box {
+      background-color:#ff0000;
+      width:37vw;
+      left:29.5vw;
+      height:5vh;
+      top:90vh;
+}
+
+
+.loading-button-new-box {
+      background-color:#ff0000;
+      width:37vw;
+      left:29.5vw;
+      height:5vh;
+      top:90vh;
+      display:block;
+}
+
+
+.loading-button-load-box {
+      background-color:#000000;
+      width:37vw;
+      left:29.5vw;
+      height:5vh;
+      top:90vh;
+      display:none;
+}
+
+
+
+/*Preâmbulo 1B:Modos de Jogos*/
+
+.mode-game-box {
+      background-color:#000000;
+      width:98vw;
+      left:1vw;
+      height:98vh;
+      top:1vh;
+      display:none;
+}
+
+
+.mode-text-box {
+      background-color:#ff0000;
+      width:88vw;
+      left:5vw;
+      height:50vh;
+      top:9vh;
+}
+
+
+.mode-button-1p-box {
+      background-color:#00ff00;
+      width:50vw;
+      left:22vw;
+      height:8vh;
+      top:65vh;
+}
+
+
+.mode-button-2p-box {
+      background-color:#0000ff;
+      width:50vw;
+      left:22vw;
+      height:8vh;
+      top:81vh;
+}
+
+
+
+/*Preâmbulo 2A:Dados PvP*/
+
+.dados-pvp-box {
+      background-color:#000000;
+      width:98vw;
+      left:1vw;
+      height:98vh;
+      top:1vh;
+      display:none;
+}
+
+
+.dados-pvp-p1-box {
+      background-color:#ff0000;
+      width:96vw;
+      left:1vw;
+      height:39.5vh;
+      top:1vh;
+}
+
+
+.photo-player1-box {
+      background-color:#000000;
+      width:40vw;
+      left:2vw;
+      height:25vh;
+      top:2vh;
+}
+
+
+.button-photo-player1-box {
+      background-color:#0000ff;
+      width:40vw;
+      left:48vw;
+      height:7vh;
+      top:5vh;
+      
+}
+
+
+.field-name-player1-box {
+      background-color:#00ff00;
+      width:42vw;
+      left:2vw;
+      height:7vh;
+      top:30vh;
+}
+
+
+.campo-name-player1-box {
+      background-color:#55ff55;
+      width:42vw;
+      left:48vw;
+      height:7vh;
+      top:30vh;
+}
+
+
+.dados-pvp-p2-box {
+      background-color:#00ff00;
+      width:96vw;
+      left:1vw;
+      height:39.5vh;
+      top:41.5vh;
+}
+
+
+.photo-player2-box {
+      background-color:#000000;
+      width:40vw;
+      left:2vw;
+      height:25vh;
+      top:2vh;
+}
+
+
+.button-photo-player2-box {
+      background-color:#0000ff;
+      width:40vw;
+      left:48vw;
+      height:7vh;
+      top:5vh;
+      
+}
+
+
+.field-name-player2-box {
+      background-color:#ff0000;
+      width:42vw;
+      left:2vw;
+      height:7vh;
+      top:30vh;
+}
+
+
+.campo-name-player2-box {
+      background-color:#ff0000;
+      width:42vw;
+      left:48vw;
+      height:7vh;
+      top:30vh;
+}
+
+
+.dados-pvp-buttons-box {
+      background-color:#0000ff;
+      width:96vw;
+      left:1vw;
+      height:15vh;
+      top:82vh;
+}
+
+
+.field-partida-pvp-box {
+      background-color:#ff0000;
+      width:45vw;
+      left:1vw;
+      height:6vh;
+      top:1vh;
+}
+
+
+.campo-partida-pvp-box {
+      background-color:#00ff00;
+      width:45vw;
+      left:49vw;
+      height:6vh;
+      top:1vh;
+}
+
+
+.button-new-game-pvp-box {
+      background-color:#ffff00;
+      width:40vw;
+      left:28vw;
+      height:6vh;
+      top:8vh;
+}
+}
+
+
+
+/*Mobile e Tablet-Paisagem; Desktop*/
+
+@media only screen and (orientation:landscape), (min-width:1200px) {
+  
+/*Header*/
+
+.header-box {
+      background-color:#ffffff;
+      width:100vw;
+      left:0vw;
+      height:20vh;
+      top:0vh;
+}
+
+
+.logo-game-box {
+      background-color:#ff0000;
+      width:23vw;
+      left:1vw;
+      height:18vh;
+      top:1vh;
+}
+
+
+.logo-equip-box {
+      background-color:#00ff00;
+      width:23vw;
+      left:76vw;
+      height:18vh;
+      top:1vh;
+}
+
+
+.barra-menu-box {
+      background-color:#0000ff;
+      width:50vw;
+      left:25vw;
+      height:14vh;
+      top:3vh;
+}
+
+
+.img-menu-equip-box, .img-menu-history-box {
+      display:none;
+}
+
+
+.menu-perfil-box {
+      background-color:#00ff00;
+      width:12vw;
+      left:1vw;
+      height:12vh;
+      top:1vh;
+}
+
+
+.menu-menu-box {
+      background-color:#ff0000;
+      width:12vw;
+      left:18.5vw;
+      height:12vh;
+      top:1vh;
+}
+
+
+.menu-salvar-box {
+      background-color:#ffff00;
+      width:12vw;
+      left:37vw;
+      height:12vh;
+      top:1vh;
+}
+
+
+
+/*Área do Game*/
+
+.area-game-box {
+      background-color:#dddddd;
+      width:56vw;
+      left:22vw;
+      height:80vh;
+      top:20vh;
+}
+
+
+.game-table-box, .game-image-box{
+      width:56vw;
+      left:0vw;
+      height:80vh;
+      top:0vh;
+}
+
+
+
+/*Área do Player*/
+
+.area-player1-box {
+      background-color:#bbbbbb;
+      width:22vw;
+      left:0vw;
+      height:80vh;
+      top:20vh;
+}
+
+
+.image-player1-box {
+      background-color:#00ff00;
+      width:20vw;
+      left:1vw;
+      height:30vh;
+      top:1vh;
+}
+
+
+.field-player1-pts-box {
+      background-color:#ff00ff;
+      width:15vw;
+      left:1vw;
+      height:5vh;
+      top:34vh;
+}
+
+
+.field-player1-vit-box {
+      background-color:#ffff00;
+      width:15vw;
+      left:1vw;
+      height:5vh;
+      top:40vh;
+}
+
+
+.field-player1-der-box {
+      background-color:#00ffff;
+      width:15vw;
+      left:1vw;
+      height:5vh;
+      top:46vh;
+}
+
+
+.campo-player1-pts-box {
+      background-color:#ff00ff;
+      width:4vw;
+      left:17vw;
+      height:5vh;
+      top:34vh;
+}
+
+
+.campo-player1-vit-box {
+      background-color:#ffff47;
+      width:4vw;
+      left:17vw;
+      height:5vh;
+      top:40vh;
+}
+
+
+.campo-player1-der-box {
+      background-color:#56ffff;
+      width:4vw;
+      left:17vw;
+      height:5vh;
+      top:46vh;
+}
+
+
+.time-icon-green-box {
+      background-color:#00ff00;
+      width:8vw;
+      left:7vw;
+      height:8vw;
+      top:58vh;
+}
+
+
+.area-player2-box {
+      background-color:#999999;
+      width:22vw;
+      left:78vw;
+      height:80vh;
+      top:20vh;
+}
+
+
+.image-player2-box {
+      background-color:#00ff00;
+      width:20vw;
+      left:1vw;
+      height:30vh;
+      top:1vh;
+}
+
+
+.field-player2-pts-box {
+      background-color:#ff00ff;
+      width:15vw;
+      left:6vw;
+      height:5vh;
+      top:34vh;
+}
+
+
+.field-player2-vit-box {
+      background-color:#ffff00;
+      width:15vw;
+      left:6vw;
+      height:5vh;
+      top:40vh;
+}
+
+
+.field-player2-der-box {
+      background-color:#00ffff;
+      width:15vw;
+      left:6vw;
+      height:5vh;
+      top:46vh;
+}
+
+
+.campo-player2-pts-box {
+      background-color:#ff00ff;
+      width:4vw;
+      left:1vw;
+      height:5vh;
+      top:34vh;
+}
+
+
+.campo-player2-vit-box {
+      background-color:#ffff47;
+      width:4vw;
+      left:1vw;
+      height:5vh;
+      top:40vh;
+}
+
+
+.campo-player2-der-box {
+      background-color:#56ffff;
+      width:4vw;
+      left:1vw;
+      height:5vh;
+      top:46vh;
+}
+
+
+.time-icon-red-box {
+      background-color:#ff0000;
+      width:8vw;
+      left:7vw;
+      height:8vw;
+      top:58vh;
+}
+
+
+
+/*Rodapé*/
+
+.rodape-box {
+      background-color:#555555;
+      width:100vw;
+      left:0vw;
+      height:10vh;
+      top:100vh;
+}
+
+
+.rodape-logo {
+      display:none;
+}
+
+
+
+/*Elementos Ocultos*/
+
+/*Preâmbulo 1A:Partidas Salvas*/
+
+.loading-box {
+      background-color:#000000;
+      display:block;
+      width:98vw;
+      left:1vw;
+      height:98vh;
+      top:1vh;
+      display:none;
+}
+
+
+.loading-main-box {
+      background-color:#ff0000;
+      width:47.5vw;
+      left:1vw;
+      height:96vh;
+      top:1vh;
+      overflow-y:scroll;
+}
+
+
+.loading-fields-box {
+      background-color:#00ff00;
+      width:47.5vw;
+      left:49.5vw;
+      height:96vh;
+      top:1vh;
+}
+
+
+.loading-fields-player1-box {
+      background-color:#0000ff;
+      width:45.5vw;
+      left:1vw;
+      height:37vh;
+      top:10vh;
+}
+
+
+.loading-fields-player2-box {
+      background-color:#ff00ff;
+      width:45.5vw;
+      left:1vw;
+      height:37vh;
+      top:48vh;
+}
+
+
+.loading-field-numrodadas-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:11vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+.loading-campo-numrodadas-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:2vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+.loading-field-player1-name-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+.loading-campo-player1-name-box {
+      background-color:#ff0000;
+      width:14vw;
+      left:30vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+.loading-field-player1-pts-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:8vh;
+      top:10vh;
+}
+
+
+.loading-campo-player1-pts-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:8vh;
+      top:10vh;
+}
+
+
+.loading-field-player1-vit-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:8vh;
+      top:19vh;
+}
+
+
+.loading-campo-player1-vit-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:8vh;
+      top:19vh;
+}
+
+
+.loading-field-player1-der-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:8vh;
+      top:28vh;
+}
+
+
+.loading-campo-player1-der-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:8vh;
+      top:28vh;
+}
+
+
+.loading-field-player2-name-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+.loading-campo-player2-name-box {
+      background-color:#ff0000;
+      width:14vw;
+      left:30vw;
+      height:8vh;
+      top:1vh;
+}
+
+
+.loading-field-player2-pts-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:8vh;
+      top:10vh;
+}
+
+
+.loading-campo-player2-pts-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:8vh;
+      top:10vh;
+}
+
+
+.loading-field-player2-vit-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:8vh;
+      top:19vh;
+}
+
+
+.loading-campo-player2-vit-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:8vh;
+      top:19vh;
+}
+
+
+.loading-field-player2-der-box {
+      background-color:#ff0000;
+      width:26vw;
+      left:1vw;
+      height:8vh;
+      top:28vh;
+}
+
+
+.loading-campo-player2-der-box {
+      background-color:#ff0000;
+      width:7vw;
+      left:30vw;
+      height:8vh;
+      top:28vh;
+}
+
+
+
+.loading-button-new-box {
+      background-color:#ff0000;
+      width:20vw;
+      left:64vw;
+      height:9vh;
+      top:87vh;
+      display:block;
+}
+
+
+.loading-button-load-box {
+      background-color:#000000;
+      width:20vw;
+      left:64vw;
+      height:9vh;
+      top:87vh;
+      display:none;
+}
+
+
+
+/*Preâmbulo 1B:Modos de Jogos*/
+
+.mode-game-box {
+      background-color:#000000;
+      width:98vw;
+      left:1vw;
+      height:98vh;
+      top:1vh;
+      display:none;
+}
+
+
+.mode-text-box {
+      background-color:#ff0000;
+      width:88vw;
+      left:5vw;
+      height:35vh;
+      top:9vh;
+}
+
+
+.mode-button-1p-box {
+      background-color:#00ff00;
+      width:50vw;
+      left:25vw;
+      height:14vh;
+      top:51vh;
+}
+
+
+.mode-button-2p-box {
+      background-color:#0000ff;
+      width:50vw;
+      left:25vw;
+      height:14vh;
+      top:76vh;
+}
+
+
+
+/*Preâmbulo 2A:Dados PvP*/
+
+.dados-pvp-box {
+      background-color:#000000;
+      width:98vw;
+      left:1vw;
+      height:98vh;
+      top:1vh;
+      z-index:2;
+}
+
+
+.dados-pvp-p1-box {
+      background-color:#ff0000;
+      width:47.5vw;
+      left:1vw;
+      height:70vh;
+      top:1vh;
+}
+
+
+.photo-player1-box {
+      background-color:#000000;
+      width:40vw;
+      left:2vw;
+      height:25vh;
+      top:2vh;
+}
+
+
+.button-photo-player1-box {
+      background-color:#0000ff;
+      width:40vw;
+      left:48vw;
+      height:7vh;
+      top:5vh;
+      
+}
+
+
+.field-name-player1-box {
+      background-color:#00ff00;
+      width:42vw;
+      left:2vw;
+      height:7vh;
+      top:30vh;
+}
+
+
+.campo-name-player1-box {
+      background-color:#55ff55;
+      width:42vw;
+      left:48vw;
+      height:7vh;
+      top:30vh;
+}
+
+
+.dados-pvp-p2-box {
+      background-color:#00ff00;
+      width:47.5vw;
+      left:49.5vw;
+      height:70vh;
+      top:1vh;
+}
+
+
+.photo-player2-box {
+      background-color:#000000;
+      width:40vw;
+      left:2vw;
+      height:25vh;
+      top:2vh;
+}
+
+
+.button-photo-player2-box {
+      background-color:#0000ff;
+      width:40vw;
+      left:48vw;
+      height:7vh;
+      top:5vh;
+      
+}
+
+
+.field-name-player2-box {
+      background-color:#ff0000;
+      width:42vw;
+      left:2vw;
+      height:7vh;
+      top:30vh;
+}
+
+
+.campo-name-player2-box {
+      background-color:#ff0000;
+      width:42vw;
+      left:48vw;
+      height:7vh;
+      top:30vh;
+}
+
+
+.dados-pvp-buttons-box {
+      background-color:#0000ff;
+      width:96vw;
+      left:1vw;
+      height:25vh;
+      top:72vh;
+}
+
+
+.field-partida-pvp-box {
+      background-color:#ff0000;
+      width:45vw;
+      left:1vw;
+      height:6vh;
+      top:1vh;
+}
+
+
+.campo-partida-pvp-box {
+      background-color:#00ff00;
+      width:45vw;
+      left:49vw;
+      height:6vh;
+      top:1vh;
+}
+
+
+.button-new-game-pvp-box {
+      background-color:#ffff00;
+      width:40vw;
+      left:28vw;
+      height:6vh;
+      top:8vh;
+}
+}

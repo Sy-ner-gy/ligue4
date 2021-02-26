@@ -1,0 +1,315 @@
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head><body>
+<pre>Estrutura {VW01}, {VW02} e {VW03}
+
+#Legenda
+
+1) ""  - entrada de texto estático(html)
+2) <>  - entrada de texto dinâmico(js)
+3) [ ] - entrada de texto/mídia pelo usuário
+4) {} - identificação da tarefa
+
+
+
+
+
+
+
+
+#Observações
+
+
+▪️Ao fazer alteração nessa documentação, por favor atualize a versão do mesmo, mudando o seu nome e fazendo o upload para o Trello
+
+
+
+
+
+
+
+
+#Componentes
+
+*Header:
+
+      Imagem: Logo da equipe {VW04}
+      
+      Imagem: Logo do jogo {VW05}
+      
+      Barra de menus  {VW06}
+            Caixa: "Perfil" > {CM01}
+              
+                 Quadro 1:
+                      I1) <namePlayer1> {CM02}
+                      
+                          Subquadro 1-1:                
+                              I1) "Alterar foto de perfil" = [ ]  {CM03}
+                          
+                              I2) "Alterar nome do jogador" {CM04}
+
+                                Quadro 2:
+                                  I1) Campo de inserção: "Novo nome" = [ ]
+
+
+                                  I2) Botão = "Alterar" {CM05}
+                              
+                      I2) <namePlayer2> {CM06}
+                      
+                          Subquadro 1-2:
+                              I1) "Alterar foto de perfil" = [ ]  {CM07}
+                              
+                              I2) "Alterar nome do jogador"  {CM08}
+
+                                Quadro 3:
+                                  I1) Campo de inserção: "Novo nome" = [ ]
+
+
+                                  I2) Botão = "Alterar" {CM09}
+
+              Caixa: "Menu" > {CM10}
+              
+                Quadro 4:
+                      I1) "Jogos Salvos" {CM11}
+                      
+                          Subquadro 4-1:
+                              IN) <namePartidaN> {CM12}
+
+                                Quadro 5:
+                                  I1) "Você quer carregar a partida:" <namePartidaN> "?"
+                                  
+                                  I2) Botão = "SIM" {CM13}
+                                  
+                                  I3) Botão = "NÃO" {CM14}
+                                  
+                      I2) "Apagar" {CM15}
+                      
+                          Subquadro 4-2:
+                              IN) <namePartidaN> {CM16}
+
+                                Quadro 6:
+                                  I1) "Você quer apagar a partida:" <namePartidaN> "?"
+                                  
+                                  I2) Botão = "SIM"  {CM17}
+                                  
+                                  I3) Botão = "NÃO"  {CM18}
+                                  
+                      I3) "Apagar todas as partidas" {CM19}
+                      
+                          Quadro 7:
+                              I1) "Você tem certeza disso?"
+                              
+                              I2) Botão = "SIM" {CM20}
+                              
+                              I3) Botão = "NÃO" {CM21}
+                                
+                      I4) "Apagar todos os dados(fotos de perfil, nomes dos jogadores e partidas salvas)" {CM22}
+                      
+                          Quadro 8:
+                              I1) "Você tem certeza disso?"
+                              
+                              I2) Botão = "SIM"  {CM23}
+                              
+                              I3) Botão = "NÃO" {CM24}
+
+
+
+*Preâmbulo 1A: Partidas salvas {CM25}  {VW07}
+
+        Quadro:
+              IN) "namePartidaN" {CM26}
+        
+        Campo: "Rodadas" = <numPartidas>
+        
+        Campo: "Jogador 1" = <namePlayer1>
+        
+        Campo: "Pontos" = <ptsPlayer1>
+        
+        Campo: "Vitórias" = <vitPlayer1>
+        
+        Campo: "Derrotas" = <derPlayer1>
+        
+        Campo: "Jogador 2" = <namePlayer2 ou robot>
+        
+        Campo: "Pontos" = <ptsPlayer2 ou ptsRobot>
+        
+        Campo: "Vitórias" = <vitPlayer2 ou vitRobot>
+        
+        Campo: "Derrotas" = <derPlayer2 ou derRobot>
+        
+        Botão dinâmico =
+              "Novo Jogo" (Padrão) {CM28}
+              "Carregar partida" {CM27}
+
+
+
+
+
+
+*Preâmbulo 1B: Modo de Jogo {VW08}
+
+        Texto introdutório = "Texto"
+        
+        Botão = "2 Jogadores" {CM29}
+        
+        Botão = "1 Jogador" {CM30}
+
+
+
+
+*Preâmbulo 2A: Dados PvP {VW09}
+
+        Imagem: <fotoPlayer1>
+        
+        Botão = "Selecionar imagem" A {CM31}
+        
+        Campo de inserção: "Nome do Jogador" = [ ]
+        
+        Imagem: <fotoPlayer2>
+        
+        Botão = "Selecionar imagem" B {CM32}
+        
+        Campo de inserção: "Nome do Jogador" = [ ]
+        
+        Campo de inserção: "Nome da partida" = [ ]  >> Chave de identificação
+        
+        Botão: "Iniciar Jogo" {CM33}
+
+
+
+* Preâmbulo 2B: Dados PvIa {VW10}
+
+          Imagem: <fotoPlayer1>
+
+          Botão = "Selecionar imagem" {CM34}
+
+          Campo de inserção: "Nome do Jogador" = [ ]
+
+          Imagem: "fotoIA"
+
+          Campo: "Nome do Jogador" = "robot"
+
+          Campo de inserção: "Nome da partida" = [ ] >> Chave de identificação 
+
+          Botão: "Iniciar Jogo" {CM35}
+
+
+
+*Área de Jogo {VW11}
+
+        Tabela de 6 linhas e 7 colunas
+        
+|a11 | a12 | a13 | a14 | a15 | a16 | a17 |
+|a21 | a22 | a23 | a24 | a25 | a26 | a27 |
+|a31 | a32 | a33 | a34 | a35 | a36 | a37 |
+|a41 | a42 | a43 | a44 | a45 | a46 | a47 |
+|a51 | a52 | a53 | a54 | a55 | a56 | a57 |
+|a61 | a62 | a63 | a64 | a65 | a66 | a67 |
+
+
+
+*Área de Player - 2 Sub-áreas semelhantes {VW12}
+
+
+SA1 - Player 1
+
+      Imagem: <fotoPlayer1> {CM36}
+      
+      Campo: "Pontos" = <ptsPlayer1> {CM37}
+      
+      Campo: "Vitórias" = <vitPlayer1> {CM38}
+      
+      Campo: "Derrotas" = <derPlayer1> {CM39}
+      
+      Imagem dinâmica: <ícone verde> (Padrão)
+                                        <ícone vermelho> {CM40}
+
+
+SA2 - Player 2
+
+
+      Imagem: <fotoPlayer2> ou "fotoRobot" {CM41}
+
+
+      Campo: "Pontos" = <ptsPlayer2> ou <ptsRobot> {CM42}
+
+
+      Campo: "Vitórias" = <vitPlayer2> ou <vitRobot> {CM43}
+
+
+      Campo: "Derrotas" = <derPlayer1> ou <derRobot> {CM44}
+
+
+      Imagem dinâmica: <ícone vermelho> (Padrão)
+                                        <ícone verde> {CM45}
+
+
+
+
+
+
+*Barra lateral - histórico de partidas {VW13}
+
+      Quadro A:
+            I1) Imagem: "indicativo de ganhador"
+            
+            I2) Imagem: <fotoPlayer1> ou <fotoPlayer2> (o de maior pontuação) {CM46}
+
+      Quadro B:
+            IN) <numRodada>: <namePlayer1 ganhou>, ou
+            
+            IN) <numRodada>: <namePlayer2 ganhou>, ou
+            
+            IN) <numRodada>: <robot ganhou>, ou
+            
+            IN) <numRodada>: <namePlayer1 perdeu>, ou
+            
+            IN) <numRodada>: <namePlayer2 perdeu>, ou
+            
+            IN) <numRodada>: <robot perdeu>, ou
+            
+            IN) <numRodada>: <namePlayer1 e robot empataram>, ou
+            
+            IN) <numRodada>: <namePlayer1 e namePlayer2 empataram> {CM47}
+
+
+
+*Área de mensagem de ganhador {VW14}
+
+        Quadro
+          I1) <namePlayer1 ganhou>, ou
+
+               <namePlayer2 ganhou>, ou
+
+               <robot ganhou>, ou 
+
+               <namePlayer1 e namePlayer2 empataram>, ou
+
+               <namePlayer1 e robot empataram> {CM48}
+
+
+
+*Rodapé - Assinatura {VW15}
+
+
+Criação livre, contendo:
+
+
+▪️Nome dos criadores e desenvolvedores;
+
+▪️Contatos: telefone, email e redes sociais;
+
+▪️Endereços dos repositórios da equipe e integrantes;
+
+▪️Fotos dos integrantes;
+
+▪️Descrição e objetivos da equipe;
+
+▪️Métodos e ferramentas usadas no desenvolvimento dos projetos e na dinâmica da equipe.
+
+
+Obs.: O rodapé será padrão para todos os projetos(podendo ser necessários pequenas adaptações), e portanto estará em constante desenvolvimento.
+
+
+
+
+
+</pre></body></html>

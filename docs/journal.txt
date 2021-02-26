@@ -1,0 +1,51 @@
+*06/02/2021
+
+#VW03
+Nome: Sony
+
+Conteúdo:
+
+O nome da Ia vai ser Sony. Escolhi esse nome com base na IA do filme "Eu, Robô" que possui o nome Sonny. Sony, para esse projeto, não terá rede neural e sim um algoritmo programado capaz de calcular para armar jogadas e tentar prever o próximo passo do adversário. Ganhar do Sony não será uma tarefa fácil pois ele memorizará a jogada que o adversário usou para ganhar e com isso vai se aprimorando a cada partida que perder.
+
+
+
+
+#VW01
+O Wister fez a estrutura básica do HTML; 
+
+
+Adicionei as metas informações: author, description, keywords, robots e theme-color. Para melhorar a indexação da página nos buscadores;
+
+
+Theme-color defini como vermelho, até que seja definida a paleta de cores do projeto;
+
+
+
+
+
+
+*07/02/2021
+
+
+ VW01.txt
+
+
+A barra lateral será um item oculto na forma de modal ativado por uma pequena aba à direita;
+
+
+O rodapé, que agora só mostrará informações gerais e terá dimensões menores. As informações da equipe ficarão em um elemento separado chamará "Info";
+
+
+O Info ficará oculto na forma de modal ativado por uma pequena aba à esquerda;
+
+
+Vai ser criado um botão de salvar no menu, portanto ele ficaria com 3 itend: Perfil, Menu e Salvar;
+
+
+
+
+
+
+Criado os arquivos layout.html e layout-color.html para servir de suporte na criação dos componentes da página.
+
+

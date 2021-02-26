@@ -1,0 +1,212 @@
+/*Geral*/
+@import url("modal.css");
+body {
+      padding: 0;
+      margin: 0;
+}
+
+main{
+      margin:0;
+      padding: 0;
+      width: 100%;
+}
+/*Header*/
+.header-box{
+      width: 100%;
+      padding: 0;
+      overflow: hidden;
+      background: rgb(141, 24, 24);
+      background: url("https://img.favpng.com/15/9/0/desktop-wallpaper-blue-space-nebula-wallpaper-png-favpng-yLmZKHKGC7gDdaG5htRKArq6m.jpg") no-repeat top center;
+      background-size: cover;
+}
+img, picture {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: center center;
+} 
+.img-logo-equip-box{
+      width: 15%;
+      transform: translateX(143%);
+}
+#logo-game-box{
+      float: left;
+      margin-top: 10px;
+      padding: 3px;
+      width: 20%;
+      background: brown;
+}
+#logo-equip-box{
+      float: right;
+      margin-top: 10px;
+      padding: 3px;
+      width: 20%;
+      background: rgb(46, 165, 42);
+}
+#barra-menu-box{
+      width: 100%;
+      margin: 0px 0px -17px 0px;
+      background: rgb(0, 17, 255);
+      clear: both;
+}
+#ulN{
+      list-style: none;
+      padding: 0;
+      width: 100%;
+      overflow: hidden;
+}
+#ulN li{
+}
+#menu-salvar-box{
+      width: 70px;
+      height: 70px;
+      background: rgb(255, 51, 0);
+      display: block;
+      float: right;
+}
+#menu-perfil-box{
+      width: 70px;
+      height: 70px;
+      background: chartreuse;
+      display: block;
+      float: left;
+}
+#menu-menu-box{
+      width: 70px;
+      height: 70px;
+      background: rgb(255, 238, 0);
+      display: block;
+      margin: auto;
+}
+/*Área do Game*/
+#area-player1-box{
+      float: left;
+      width: 20%;
+      background-color: sienna;
+}
+#area-player2-box{
+      float: right;
+      width: 20%;
+      background-color: rgb(223, 167, 141);
+}
+#game-table-box{
+      width: 60%;
+      margin: auto;
+      background-color: red;
+}
+#game-table-box ul{
+      list-style: none;
+      padding: 0;
+      margin: auto;
+      text-align: center;
+      
+}
+#game-table-box li{
+      display: inline-block;
+      width: calc(90%/7);
+      height: 325px;
+      margin-top: 14.3%;
+      margin-right: 2px;
+      background-color: rgb(46, 165, 42);
+}
+.field-game-box{
+      list-style: none;
+      width: 95%;
+      transform: translateX(2%);
+      padding: 0;
+      background-color: palegreen;
+}
+.field-game-box li{
+      display: flex;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 5px;
+      background-color: rgb(9, 240, 9);
+}
+.fields{
+      width: 20%;
+      height: 50px;
+      background-color: blue; 
+}
+.campo-game-box{
+      margin:0px;padding: 0px;
+      width: 80%;
+      margin-left: 5px;
+      height: 50px;
+      background-color: rgb(9, 240, 9);
+}
+.campo-game-box-two{
+      margin:0px;padding: 0px;
+      width: 80%;
+      height: 50px;
+      margin-right: 5px;
+      background-color: rgb(9, 240, 9);
+}
+
+.conf{
+      width: 50%;
+      margin:auto
+}
+
+/* roda pé*/
+.rodape-box{
+      clear: both;
+      margin-top: 3px;
+      text-align: center;
+      width: 100%;
+      height: 100px;
+      background-color: rgb(49, 40, 34);
+}
+
+/*Mobile e Tablet-Retrato*/
+@media only screen and (max-width:680px){
+     
+      
+/*Header*/
+
+#menu-salvar-box{
+      width:40px;
+      height:40px;
+   
+}
+#menu-perfil-box{
+      width:40px;
+      height:40px;
+}
+#menu-menu-box{
+      width:40px;
+      height:40px;
+}
+.img-logo-equip-box{
+      transform: translateX(140%);
+}
+/*Área do Game*/
+#area-player1-box{
+      width: 50%;
+      overflow: hidden;
+}
+#area-player2-box{
+      width: 50%;
+      overflow: hidden;
+}
+#game-table-box{
+      clear: both;
+      width: 100%;
+}
+#game-table-box li{
+      width: calc(90%/8);
+}
+
+
+/*Área do Player*/
+
+/*Rodapé*/
+.rodape-box img{
+      transform: translateX(-1%);
+}
+
+}
+@media only screen and (max-width:400px){
+
+}
+

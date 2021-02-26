@@ -1,0 +1,117 @@
+ <html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head><body>
+
+<pre>Dados
+
+
+
+#Legendas
+
+
+▪️[user] : dados gerados pela interação do player (Saídas no Controller - Manipulador;
+
+▪️[controller] : dados gerados internamente pelo Controller - Gerador para serem usados por toda a aplicação;
+
+▪️Entradas-Dados: dados que serão necessários para eventos no View ou no Model
+
+▪️Entradas/Saídas-Mídias: mídias que deverão ser armazenadas no cache e localstorage
+
+▪️Saídas: dados gerados através da interação do user
+
+▪️origin: dado gerado no Controller-Game Rules, que será usado pelo Controller-Gerador para gerar todos os demais dados
+
+
+
+
+#Observações
+
+
+▪️Ao fazer alteração nessa documentação, por favor atualize a versão do mesmo, mudando o seu nome e fazendo o upload para o Trello
+
+▪️Os nomes dos dados são somente sugestivos, podendo o desenvolvedor mudá-lo, desde que o documente de forma correta.
+
+
+
+
+
+#Dados
+
+*Origin
+
+▪️origin: a definir
+
+
+
+
+
+*Entradas/Saídas-Mídias
+
+▪️fotoPlayer1 (foto de perfil do Player1) 
+
+▪️fotoPlayer2 (foto de perfil do Player2)
+
+▪️fotoIa (imagem escolhida para representar a Ia; não é armazenada no cache e localstorage)
+
+
+
+
+
+
+
+
+*Entrada-Dados
+
+▪️namePlayer1 (nome do Player 1) [user]
+
+▪️namePlayer2 (nome do Player2) [user]
+
+▪️namePartidaN (nome da partida; chave de identificação dos dados salvos) [user]
+
+▪️robot  (nome da Ia, que ainda será definido) [controller]
+
+▪️verifyPartida (booleano que indica se existe uma partida salva no localstorage) [controller]
+
+▪️numPartidas (indica quantas rodadas tem uma partida) [controller]
+
+▪️ptsPlayer1 (pontos do Player1) [controller]
+
+▪️vitPlayer1 (número de vitórias do Player 1) [controller]
+
+▪️derPlayer1 (número de derrotas do Player1) [controller]
+
+▪️ptsPlayer2 (pontos do Player 2) [controller]
+
+▪️ptsRobot (pontos da Ia) [controller]
+
+▪️vitPlayer2 (número de vitórias do Player 2) [controller]
+
+▪️vitRobot (número de vitórias da Ia) [controller]
+
+▪️derPlayer2 (número de derrotas do Player 2) [controller]
+
+▪️derRobot (número de derrotas da Ia) [controller]
+
+▪️winner (indica o ganhador) [controller]
+
+▪️numRodadas (indica o número absoluto da rodada) [controller]
+
+
+
+
+
+
+*Saídas 
+
+▪️namePlayer1 (nome do Player 1)
+
+▪️namePlayer2 (nome do Player 2)
+
+▪️namePartidaN (nome da partida; chave de identificação dos dados salvos)
+
+
+
+
+
+
+
+
+</pre></body></html>
